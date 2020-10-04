@@ -26,7 +26,7 @@ import MyComponent from './components/MyComponent';
 
 const App = () => {
   // return null;
-  const my_name = 'Kenan Deniz';
+  const my_name = 'xkendx';
 
   // function myFunction(){
   //   return <Text>Hello Clarusway!</Text>;
