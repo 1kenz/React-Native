@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, SafeAreaView, StyleSheet} from 'react-native';
+import { View, Text, SafeAreaView, StyleSheet } from 'react-native';
 import MyComponent from './components/MyComponent';
 /**
  * HTML
@@ -35,27 +35,27 @@ const App = () => {
   const isAdmin = true;
   function myFunction() {
     // const isAdmin = true;
-    
-    //   if(isAdmin){
-      //     return <Text>Admin kullanıcısı</Text>;
-      //   }
-      //   else {
-        //     return <Text>Normal kullanıcısı</Text>;
-        //   }
-        // }
-        
-        // if (isAdmin) return <Text>Admin kullanıcısı</Text>;
-        
-        // return <Text>Normal kullanıcı</Text>;
-        return isAdmin ?  <Text>Admin kullanıcısı</Text> : null
-      }
 
-  function myFunction1(userName){
+    //   if(isAdmin){
+    //     return <Text>Admin kullanıcısı</Text>;
+    //   }
+    //   else {
+    //     return <Text>Normal kullanıcısı</Text>;
+    //   }
+    // }
+
+    // if (isAdmin) return <Text>Admin kullanıcısı</Text>;
+
+    // return <Text>Normal kullanıcı</Text>;
+    return isAdmin ? <Text>Admin kullanıcısı</Text> : null;
+  }
+
+  function myFunction1(userName) {
     return <Text>{userName}</Text>;
   }
 
-  function myFunction2(){
-    const myArray = ["İzmir", "İstanbul", "Ankara", "Adana"];
+  function myFunction2() {
+    const myArray = ['İzmir', 'İstanbul', 'Ankara', 'Adana'];
 
     return myArray.map((city) => {
       return <Text>{city}</Text>;
@@ -71,15 +71,14 @@ const App = () => {
 
       <MyComponent />
       <Text style={styles.hello}>Merhaba {my_name}</Text>
-      
+
       {myFunction()}
-      {myFunction1("Kenan")}
+      {myFunction1('Kenan')}
       {myFunction2()}
-      
-      {isAdmin ?  <Text>Admin kullanıcısı</Text> : null}
-      
+
+      {isAdmin ? <Text>Admin kullanıcısı</Text> : null}
+
       {isAdmin && <Text>Admin kullanıcısı</Text>}
-      
     </>
   );
 };
