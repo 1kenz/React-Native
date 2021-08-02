@@ -1,14 +1,17 @@
-import React from "react";
-import { View, Text } from "react-native";
+/* eslint-disable react-native/no-inline-styles */
+// eslint-disable-next-line react-native/no-inline-styles
 
-import Component_A from "./pages/Component_A";
-import Component_B from "./pages/Component_B";
+import React from 'react';
+import { View, Text } from 'react-native';
 
-import initialState from "./context/store";
-import reducer from "./context/reducer";
+import Component_A from './pages/Component_A';
+import Component_B from './pages/Component_B';
 
-import { Provider } from "react-redux";
-import { createStore } from "redux";
+import initialState from './context/store';
+import reducer from './context/reducer';
+
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
 const store = createStore(reducer, initialState);
 

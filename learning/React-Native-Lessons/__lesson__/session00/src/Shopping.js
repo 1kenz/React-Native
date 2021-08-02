@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {
   Text,
@@ -239,7 +240,7 @@ const Shopping = () => {
           autoFocus
         />
         <Image
-          style={styles.searchimage}
+          style={styles.searchImage}
           source={{ uri: 'https://img.icons8.com/ios/452/search--v1.png' }}
         />
       </View>
@@ -280,11 +281,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginTop: 10,
     paddingLeft: 5,
-    flexDirection: 'row',
     borderColor: 'gray',
     borderWidth: 1,
   },
-  searchimage: {
+  searchImage: {
     width: 25,
     height: 25,
     position: 'absolute',

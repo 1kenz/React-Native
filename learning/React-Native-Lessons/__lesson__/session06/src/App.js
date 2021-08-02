@@ -1,19 +1,19 @@
-import React from 'react';
-import { SafeAreaView, View, Text, Button } from 'react-native';
-
+/* eslint-disable react-native/no-inline-styles */
+import React, { useState, useEffect } from 'react';
+import { SafeAreaView, View, Text, Button, Alert } from 'react-native';
 
 const App = (props) => {
   const [orderCount, setOrderCount] = useState(0);
 
   useEffect(() => {
-    Alert.alert("CLARUSWAY", "Hoşgeldiniz")
-  }, [])
+    Alert.alert('CLARUSWAY', 'Hoşgeldiniz');
+  }, []);
 
   useEffect(() => {
     if (orderCount > 10) {
-      Alert.alert("CLARUSWAY", "10'dan fazla seçim yapıyorsunuz.")
+      Alert.alert('CLARUSWAY', "10'dan fazla seçim yapıyorsunuz.");
     }
-  }, [orderCount])
+  }, [orderCount]);
 
   return (
     <SafeAreaView>
@@ -25,7 +25,7 @@ const App = (props) => {
         />
       </View>
     </SafeAreaView>
-  )
-}
+  );
+};
 
 export default App;

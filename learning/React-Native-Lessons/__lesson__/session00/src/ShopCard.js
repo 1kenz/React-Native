@@ -1,15 +1,9 @@
+/* eslint-disable react-native/no-inline-styles */
+
 import React from 'react';
-import {
-  Text,
-  View,
-  StyleSheet,
-  TouchableOpacity,
-  Image,
-  Dimensions,
-} from 'react-native';
+import { Text, View, TouchableOpacity, Image } from 'react-native';
 
-import styles from "./styles";
-
+import styles from './styles';
 
 const ShopCard = ({ food }) => {
   return (

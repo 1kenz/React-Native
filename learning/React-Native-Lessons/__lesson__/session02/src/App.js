@@ -1,7 +1,4 @@
 /* eslint-disable no-trailing-spaces */
-/* eslint-disable prettier/prettier */
-/* eslint-disable react/self-closing-comp */
-/* eslint-disable react-native/no-inline-styles */
 /*TODO HTML attribute style=""
 /*TODO RN attribute style={}
 /* TODO attribute = {}
@@ -79,7 +76,7 @@ const App = () => {
   }
 
   return (
-    //s <SafeAreaView>  // IOS ta kullanılıyor. çentikli yapı için verileri aşağıya alır
+    // <SafeAreaView>  // IOS ta kullanılıyor. çentikli yapı için verileri aşağıya alır
     <>
       <View style={styles.container}>
         <Text style={styles.text}>CLARUSWAY!</Text>

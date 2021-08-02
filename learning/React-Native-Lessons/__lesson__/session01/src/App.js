@@ -1,6 +1,3 @@
-/* eslint-disable no-trailing-spaces */
-/* eslint-disable prettier/prettier */
-/* eslint-disable react/self-closing-comp */
 /* eslint-disable react-native/no-inline-styles */
 /*TODO HTML attribute style=""
 /*TODO RN attribute style={}
@@ -19,7 +16,7 @@ import {
 
 const App = () => {
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
         <View style={styles.inputContainer}>
           <TextInput
@@ -42,7 +39,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#e0e0e0',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   inputContainer: {
     backgroundColor: 'white',
@@ -53,15 +50,15 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   buttonContainer: {
-    backgroundColor: 'blue', 
+    backgroundColor: 'blue',
     padding: 10,
     margin: 20,
     borderRadius: 5,
-    alignItems: 'center'
+    alignItems: 'center',
   },
   textStyle: {
     fontSize: 17,
     color: 'white',
-    fontWeight: 'bold'
-  }
+    fontWeight: 'bold',
+  },
 });
