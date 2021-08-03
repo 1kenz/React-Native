@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, StyleSheet } from 'react-native';
 
 function App() {
   const sayHello = name => {
@@ -8,13 +8,23 @@ function App() {
 
   return (
     <View>
-      <View style={{ backgroundColor: 'red' }}>
+      <View style={styles.container}>
         <Text>Hello World!!</Text>
         <Text>Hello New World!!</Text>
       </View>
-      <Button title="Click Me" onPress={() => sayHello('Kenan')} />
+      <Button
+        title="Click Me"
+        onPress={() => sayHello('Kenan')}
+        color="green"
+      />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'yellow',
+  },
+});
 
 export default App;
