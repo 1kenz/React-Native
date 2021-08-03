@@ -1,29 +1,36 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 function App() {
-  const sayHello = name => {
-    console.log('Hello ' + name);
-  };
-
   return (
-    <View>
-      <View style={styles.container}>
+    <View style={styles.container}>
+      <View style={styles.upper_view_container}>
         <Text>Hello World!!</Text>
-        <Text>Hello New World!!</Text>
       </View>
-      <Button
-        title="Click Me"
-        onPress={() => sayHello('Kenan')}
-        color="green"
-      />
+
+      <View style={styles.bottom_view_container}>
+        <Text>Hi World!!</Text>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+    // flexDirection: 'row',
+  },
+  upper_view_container: {
+    flex: 1,
     backgroundColor: 'yellow',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  bottom_view_container: {
+    flex: 10,
+    backgroundColor: 'red',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
