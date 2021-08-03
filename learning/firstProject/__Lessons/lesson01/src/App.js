@@ -6,7 +6,7 @@ import Card from './components/Card';
 const App = props => {
   return (
     <View>
-      <Card title={'Edward Stark'} text={'Winter is coming...'} />
+      <Card title="Edward Stark" text="Winter is coming..." />
       <Card
         title={'Arif Işık'}
         text={'Uzaylılar tarafından kaçırıldım. Evet tarafından...'}
