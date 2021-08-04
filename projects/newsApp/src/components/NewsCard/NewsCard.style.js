@@ -4,4 +4,5 @@ export default StyleSheet.create({
   container: {},
   image: {},
   title: {},
+  description: {},
 });
