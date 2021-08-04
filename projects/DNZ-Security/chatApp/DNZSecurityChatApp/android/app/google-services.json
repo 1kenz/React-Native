@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "671512189492",
+    "project_id": "dnzchatapp",
+    "storage_bucket": "dnzchatapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671512189492:android:e22f739977d6fba24c4861",
+        "android_client_info": {
+          "package_name": "com.dnzsecuritychatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671512189492-rurvihelun17bqcal7fua2ki4tbpp11b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfe5kgtqJhAtblql0zdhqWpU8PM2xJIAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671512189492-rurvihelun17bqcal7fua2ki4tbpp11b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
