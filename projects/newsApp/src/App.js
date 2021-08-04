@@ -3,13 +3,16 @@ import { View, FlatList, StyleSheet } from 'react-native';
 import data from './news-data.json';
 import NewsCard from './components/NewsCard';
 
+const renderNews = ({ item }) => <NewsCard news={item} />;
+const keyExtractor = item => item.id.toString();
+
 const App = () => {
   return (
     <View style={styles.container}>
       <FlatList
-        keyExtractor={item => item.id.toString()}
+        keyExtractor={keyExtractor}
         data={data}
-        renderItem={({ item }) => <NewsCard news={item} />}
+        renderItem={renderNews}
       />
     </View>
   );
