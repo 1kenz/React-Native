@@ -1,4 +1,4 @@
-import { StyleSheet, dimensions } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
 export default StyleSheet.create({
   container: {
@@ -7,7 +7,7 @@ export default StyleSheet.create({
     borderRadius: 10,
   },
   image: {
-    height: dimensions.get('window').height / 4,
+    height: Dimensions.get('window').height / 4,
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
   },
@@ -21,6 +21,16 @@ export default StyleSheet.create({
   author: {
     fontStyle: 'italic',
     texAlign: 'right',
+  },
   titleContainer: {
     padding: 10,
+  },
+  banner_image: {
+    height: Dimensions.get('window').height / 5,
+    width: Dimensions.get('window').width / 2,
+  },
+  headerNews: {
+    fontWeight: 'bold',
+    fontSize: 50,
+  },
 });
