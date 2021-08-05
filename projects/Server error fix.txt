@@ -1,0 +1,2 @@
+npm install react-timer-mixin
+npm cache clean --force
